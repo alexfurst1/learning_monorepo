@@ -38,3 +38,23 @@ class Unordered_List:
                 current = current.getNext()
 
         return isFound
+    
+    def remove(self,item): # i don't fully understand this but I will try to memorize and eventually it will click
+        found = False
+        current = self.head
+        previous = None
+
+        while not found:
+            if current.getData() == item:
+                found = True
+            else:
+                previous = current
+                current = current.getNext()
+
+            if previous == None:
+                self.head = current.getNext()
+            else:
+                previous.setNext(current.getNext())
+
+    
+            

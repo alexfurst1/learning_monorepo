@@ -1,6 +1,6 @@
 #this program is a recommended problem from the pythonds textbook in chapter 4.18
 
-from deque import Deque
+from pythonds_textbook.deque.deque import Deque
 
 def is_palindrome(str: str) -> bool:
     myQue = Deque()

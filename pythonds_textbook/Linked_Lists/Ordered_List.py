@@ -50,4 +50,24 @@ class Ordered_List:
                     current = current.getNext()
 
         return found
+    
+    def add(self,item):
+        stop = False
+        current = self.head
+        previous = None
+
+        while current != None and not stop:
+            if current.getData() > item:
+                stop = True
+            else:
+                previous = current
+                current = current.getNext()
+
+        temp = Node(self.head)
+        if previous == None:
+            temp.setNext(self.head)
+            self.head = temp
+        else:
+            temp.setNext(current)
+            previous.setNext(temp)
             
