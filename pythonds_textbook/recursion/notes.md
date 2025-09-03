@@ -20,3 +20,7 @@
 
  - honestly I could care less about binary and hexadecimal, and so I'm just not going to learn it now. i really hope that doesn't bite
  me in the ass later on
+
+ - same with fractals this stuff is boring me so much
+ - god I hate recursion
+
