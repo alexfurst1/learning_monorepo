@@ -21,4 +21,10 @@
 
   1. sequential search
 
-  
+  easy, is exactly as it sounds
+
+  2. binary search
+
+   - starts with an element in the middle of an **ordered list,** compares it to the searched item, and cuts the searched list in half depending on if the middle element is higher / lower than the searched item\
+   - great example of a divide and conquer strategy
+   - O(log n) complexity
