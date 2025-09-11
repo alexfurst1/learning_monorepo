@@ -13,3 +13,21 @@ the bubble sort makes multiple passes through a list, highlighting two adjacent 
 
 - known as the most inefficient sorting method lmao
 - however, if during a pass we know that there were no exchanges, we know the full list is sorted. This is something other algorithms lack the ability to do
+
+2. Selection sort
+the selection sort improves on the bubble sort, the difference being the selection sort makes only one exchange per pass.
+- basically, each pass find the largest item in the list and moves it to the end. Just like the bubble sort, each successive pass iterates the length n-1 over the list. So, each sorted item remains at the end.
+
+3. Insertion sort
+O(n^2) just like the bubble, short bubble, and selection sorts, works in a slightly different way.
+- it always retains a sorted sublist in the lower portions of the main list. Each new item is added to that sorted sublist in order, until the main list only contains the sorted sublist. 
+ - each item immediately to the right of the sorted sublist is the item being handled. It is inserted by shifting all larger items in the sorted sublist to the right.
+
+ 4. Shell short (actually used irl)
+ - is kind of like an add-on to the insertion sort to make it more efficient.
+ 1. first, it selects multiple sublists throughout the main list. It does this by selecting items with a fixed gap between them. For example a gap of 3 would select every 3rd item, and so every 3rd item would be the first sublist, started with item 0. Then, the next sublist would start at item 1, and so on, until every item exists within a sublist.
+ 2. it then sorts those individual sublists. This gives the insertion sort an advantage, since items of similar size are now clustered together.
+  - you'd have more items around 10 at the beginning, and more items around 45 at the end, if you were to have a list with items ranging from 0-50 (45 is arbitrary)
+  3. finally, an insertion sort is conducted, resulting in many less overrall shifts, resulting in much lower computing cost.
+
+- can perform at O(n^(3/2))
