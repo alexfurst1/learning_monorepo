@@ -6,14 +6,14 @@
 
 
 ### 9/18
-* 3sum - problem 15
+# 3sum - problem 15
  * array two pointer, sorting (kinda)
  * I understand how I need to fix the first index, then use two pointer to search over the rest
  * I am having trouble understanding removing and preventing duplicates
  * also syntax issues because I'm not the best coder yet
  * i get it for the most part but will most likely forget by tomorrow
 
-* 3sumClosest - problem 16
+# 3sumClosest - problem 16
  * pretty easy for me since I understood the two pointer algorithm with 3 items, learned from the 3sum algo
  * was having trouble on how to compare ranges. My first idea was to have sum and temp set to 0, but I'd have nothing to compare off of.
  * aha moment was setting sum to nums[0] + nums[1] + nums[2] so no matter what it might be valid, unlike setting sum to 0.
