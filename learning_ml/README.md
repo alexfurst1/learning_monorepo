@@ -1,6 +1,4 @@
-# this is an end-to-end project from the hands on ml textbook
-
-## it covers all of chapter 2
+# Notebooks where I learned machine learning
 
 * uses virtual environment
 * environment is named myenv, activate with  
